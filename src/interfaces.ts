@@ -55,7 +55,7 @@ interface Styles {
     [key: string]: string
 }
 
-const css = {
+const css: Styles = {
     border: '1 px solid black',
     marginTop: '2px'
 }
