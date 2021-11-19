@@ -30,4 +30,10 @@ function infinite():never{
 }
 
 //Type = собственные типы
+type Login = string;
+const login: Login = "my_login";
 
+type ID = string | number;
+const id: ID = 155 + "fkdnfm";
+
+type SomeType = string | null | undefined
