@@ -59,3 +59,24 @@ const css: Styles = {
     border: '1 px solid black',
     marginTop: '2px'
 }
+
+//===========
+
+interface Person{
+    name: string
+    age: number
+}
+
+type PersonKeys = keyof Person; // 'name' | 'age'
+
+const myName: PersonKeys = 'name';
+//const myName1: PersonKeys = 'key'; // Error
+
+type User = {
+    id:number
+    name:string
+    age: number
+}
+
+type UserKeysNoId = Exclude<keyof User,'id'> // 'name' | 'age'
+type UserKeysOnlyId = Pick<User,'id'> // 'name' | 'age'
